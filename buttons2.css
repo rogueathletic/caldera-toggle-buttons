@@ -1,0 +1,104 @@
+
+
+p:first-of-type {
+    text-align: center;
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+  max-width: 1400px;
+  margin: auto; 
+  }
+  
+  .size,
+  .preference {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+      text-align: center;
+  }
+  
+  
+  input[type="checkbox"] {
+    margin:10px;
+    position:relative;
+    width:120px;
+    height:40px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #333, #000);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1);
+  }
+  
+  input:checked[type="checkbox"]:nth-of-type(1) {
+    background: linear-gradient(0deg, #e67e22, #f39c12);
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1);
+  }
+  /* 
+  input:checked[type="checkbox"]:nth-of-type(2) {
+    background: linear-gradient(0deg, #70a1ff, #1e90ff);
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1);
+  } */
+  
+  input[type="checkbox"]:before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:80px;
+    height:40px;
+    background: linear-gradient(0deg, #000, #F47954);
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #232323;
+    transform: scale(.98,.96);
+    transition:.5s;
+  }
+  
+  input:checked[type="checkbox"]:before {
+    left:40px;
+  }
+  
+  input[type="checkbox"]:after{
+    content:'';
+    position:absolute;
+    top:calc(50% - 2px);
+    left:70px;
+    width:4px;
+    height:4px;
+    background: linear-gradient(0deg, #F47954, #000);
+    border-radius: 50%;
+    transition:.5s;
+  }
+  
+  input:checked[type="checkbox"]:after {
+    left:110px;
+  }
+  
+  h1 {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    text-align:center;
+    color:#F47954;
+    font-size:16px;
+    padding:15px 0;
+    text-transform: uppercase;
+    letter-spacing:4px;
+  }
+
+  .return {
+    text-align: center;
+    padding: 40px;
+}
+
+a{
+    text-decoration: none;
+transition-duration: 1111ms;
+}
+
+a:hover {
+  color: #999;
+}
